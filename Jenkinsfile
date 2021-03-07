@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-               python reverse_list.py
+               bat 'python reverse_list.py'
             }
         }
       stage('Testing Stage'){
